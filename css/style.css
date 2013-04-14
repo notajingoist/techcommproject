@@ -1,0 +1,96 @@
+body {
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Share Tech Mono", "PT Sans", "helvetica neue", sans-serif;
+
+}
+
+button {
+	box-sizing: border-box;
+	height: 100%;
+	float: right;
+	text-align: center;
+	font-family: "Share Tech Mono", "PT Sans", "helvetica neue", sans-serif;
+	font-size: 20px;
+	background-color: #c41230;
+	border: none;
+}
+
+#map_button {
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+#list_button {
+	padding-right: 10px;
+}
+
+#navigation {
+	box-sizing: border-box;
+	width: 100%;
+	height: 50px;
+	border-bottom: 5px solid #000;
+	box-shadow: 0px 10px 0px #d8d9da;
+	background-color: #c41230;
+
+}
+
+h1 {
+	font-size: 44px;
+}
+
+#content {
+	clear: both;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+#views {
+	padding: 15px;
+}
+
+ul {
+	padding-left: 30px;
+}
+
+li {
+	line-height: 35px;
+	position: relative;
+}
+
+li.stop:before {
+	content:url("../images/red_circle.png");
+	position: absolute;
+	left: -30px;
+	top: 4px;
+}
+
+li.go:before {
+	content:url("../images/green_circle.png");
+	position: absolute;
+	left: -30px;
+	top: 4px;
+}
+
+#listview {
+	width: 50%;
+	float: left;
+	/*background-color: #00ff00;*/
+}
+
+
+#mapview {
+	/*background-color: #0000ff;*/
+}
+
+
+
+
+
+
+
+
+

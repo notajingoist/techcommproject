@@ -1,0 +1,37 @@
+{
+  "prn-cl-baker-1": {
+                          "building":"Baker",
+                          "name":"Cluster (Baker 1)",
+                          "working":true,
+                          "lat":40.44147,
+                          "lon":-79.94504
+  },
+  "prn-cl-baker-2": {
+                          "building":"Baker",
+                          "name":"Cluster (Baker 2)",
+                          "working":true,
+                          "lat":40.44146,
+                          "lon":-79.94503
+  },
+  "prn-cl-uc-1": {
+                          "building":"University Center",
+                          "name":"UC web station",
+                          "working":false,
+                          "lat":40.44334,
+                          "lon":-79.94227
+  },
+  "prn-cl-cfa-1": {
+                          "building":"College of Fine Arts",
+                          "name":"First floor",
+                          "working":true,
+                          "lat":40.44159,
+                          "lon":-79.94292
+  },
+  "prn-lib-hl4music-1": {
+                          "building":"Hunt",
+                          "name":"Fourth floor music?",
+                          "working":false,
+                          "lat":40.44114,
+                          "lon":-79.94375
+  }
+}

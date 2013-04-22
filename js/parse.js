@@ -97,6 +97,15 @@ function getPrintersJson() {
 	return storeData.getJson();
 }
 
+function writeJson() {
+    var fs = require('fs');
+    var jsonstr = JSON.stringify(getPrintersJson());
+    fs.writeFile('printers.json', jsonstr, function(err) {
+        if(err) { console.log (err); }
+        else    { console.log ('success!\n'); }
+    });
+}
+
 
 // $(document).ready(function(){
 // 	var blah = getPrintersJson();

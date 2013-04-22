@@ -1,37 +1,282 @@
 {
   "prn-cl-baker-1": {
                           "building":"Baker",
-                          "name":"Cluster (Baker 1)",
-                          "working":true,
+                          "name":"Baker 1st Floor #1",
+                          "working":false,
                           "lat":40.44147,
-                          "lon":-79.94504
+                          "lon":-79.94504,
+                          "color": false
   },
   "prn-cl-baker-2": {
                           "building":"Baker",
-                          "name":"Cluster (Baker 2)",
-                          "working":true,
-                          "lat":40.44146,
-                          "lon":-79.94503
-  },
-  "prn-cl-uc-1": {
-                          "building":"University Center",
-                          "name":"UC web station",
+                          "name":"Baker 1st Floor #2",
                           "working":false,
-                          "lat":40.44334,
-                          "lon":-79.94227
+                          "lat":40.44146,
+                          "lon":-79.94503,
+                          "color": false
   },
   "prn-cl-cfa-1": {
                           "building":"College of Fine Arts",
-                          "name":"First floor",
-                          "working":true,
+                          "name":"CFA 3rd Floor #1",
+                          "working":false,
                           "lat":40.44159,
-                          "lon":-79.94292
+                          "lon":-79.94292,
+                          "color": false
   },
-  "prn-lib-hl4music-1": {
-                          "building":"Hunt",
-                          "name":"Fourth floor music?",
+  "prn-cl-cfa-c": {
+                          "building":"College of Fine Arts",
+                          "name":"CFA 3rd Floor #2 (Color)",
+                          "working":false,
+                          "lat":40.44159,
+                          "lon":-79.94292,
+                          "color": true
+  },
+  "prn-cl-cyert-1": {
+                          "building":"Cyert Hall",
+                          "name":"Cyert 1st Floor Atrium",
+                          "working":false,
+                          "lat":40.44432,
+                          "lon":-79.94389,
+                          "color": false
+  },
+  "prn-cl-dh-1": {
+                          "building":"Doherty Hall",
+                          "name":"Doherty Chemical Engineering Dept.",
+                          "working":false,
+                          "lat":40.44245,
+                          "lon":-79.94432,
+                          "color": false
+  },
+  "prn-cl-hunt-1": {
+                          "building":"Hunt Library",
+                          "name":"Hunt Basement",
+                          "working":false,
+                          "lat":40.44116,
+                          "lon":-79.94375,
+                          "color": false
+  },
+  "prn-cl-more-1": {
+                          "building":"Morewood Gardens",
+                          "name":"Morewood Cluster",
+                          "working":false,
+                          "lat":40.44544,
+                          "lon":-79.94323,
+                          "color": false
+  },
+  "prn-cl-res-5-1": {
+                          "building":"Residence on Fifth",
+                          "name":"Residence on Fifth 1st Floor",
+                          "working":false,
+                          "lat":40.44255,
+                          "lon":-79.94004,
+                          "color": false
+  },
+  "prn-cl-uc-1": {
+                          "building":"University Center",
+                          "name":"UC Web Station",
+                          "working":false,
+                          "lat":40.44334,
+                          "lon":-79.94227,
+                          "color": false
+  },
+  "prn-cl-wean-1": {
+                          "building":"Wean Hall",
+                          "name":"Wean 5200 Corridor",
+                          "working":false,
+                          "lat":40.44273,
+                          "lon":-79.94589,
+                          "color": false
+  },
+  "prn-cl-wean-c": {
+                          "building":"Wean Hall",
+                          "name":"Wean Cluster (Color)",
+                          "working":false,
+                          "lat":40.44273,
+                          "lon":-79.94589,
+                          "color": true
+  },
+  "prn-cl-ww-1": {
+                          "building":"West Wing",
+                          "name":"West Wing Cluster",
+                          "working":false,
+                          "lat":40.44273,
+                          "lon":-79.94089,
+                          "color": false
+  },
+  "prn-cs-ghc3-1": {
+                          "building":"Gates-Hillman Center",
+                          "name":"Gates 3rd Floor",
+                          "working":false,
+                          "lat":40.44353,
+                          "lon":-79.94458,
+                          "color": false
+  },
+  "prn-cs-ghc5-1": {
+                          "building":"Gates-Hillman Center",
+                          "name":"Gates 5th Floor",
+                          "working":false,
+                          "lat":40.44353,
+                          "lon":-79.94458,
+                          "color": false
+  },
+  "prn-gsia-ww-1": {
+                          "building":"Posner Hall",
+                          "name":"Posner (Tepper)",
+                          "working":false,
+                          "lat":40.44106,
+                          "lon":-79.94231,
+                          "color": false
+  },
+  "prn-hou-donner-1": {
+                          "building":"Donner House",
+                          "name":"Donner",
+                          "working":false,
+                          "lat":40.44194,
+                          "lon":-79.94019,
+                          "color": false
+  },
+  "prn-hou-mudge-1": {
+                          "building":"Donner House",
+                          "name":"Donner",
+                          "working":false,
+                          "lat":40.44194,
+                          "lon":-79.94019,
+                          "color": false
+  },
+  "prn-ini-hs1-1": {
+                          "building":"University Technology Development Center",
+                          "name":"UTDC 1st Floor",
                           "working":false,
                           "lat":40.44114,
-                          "lon":-79.94375
+                          "lon":-79.94375,
+                          "color": false
+  },
+  "prn-ini-hs2-1": {
+                          "building":"University Technology Development Center",
+                          "name":"UTDC 2nd Floor",
+                          "working":false,
+                          "lat":40.44114,
+                          "lon":-79.94375,
+                          "color": false
+  },
+  "prn-ini-hsb-1": {
+                          "building":"University Technology Development Center",
+                          "name":"UTDC Basement",
+                          "working":false,
+                          "lat":40.44114,
+                          "lon":-79.94375,
+                          "color": false
+  },
+  "prn-lib-es-2": {
+                          "building":"Roger Sorrells Engineering & Science Library",
+                          "name":"E&S Library #1",
+                          "working":false,
+                          "lat":40.44114,
+                          "lon":-79.94375,
+                          "color": false
+  },
+  "prn-lib-es-3": {
+                          "building":"Roger Sorrells Engineering & Science Library",
+                          "name":"E&S Library #2",
+                          "working":false,
+                          "lat":40.44114,
+                          "lon":-79.94375,
+                          "color": false
+  },
+  "prn-lib-es-c": {
+                          "building":"Roger Sorrells Engineering & Science Library",
+                          "name":"E&S Library #3 (Color)",
+                          "working":false,
+                          "lat":40.44114,
+                          "lon":-79.94375,
+                          "color": true
+  },
+  "prn-lib-hl1color": {
+                          "building":"Hunt Library",
+                          "name":"Hunt 1st Floor #1 (Color)",
+                          "working":false,
+                          "lat":40.44116,
+                          "lon":-79.94375,
+                          "color": true
+  },
+  "prn-lib-hl1ref-1": {
+                          "building":"Hunt Library",
+                          "name":"Hunt 1st Floor #2",
+                          "working":false,
+                          "lat":40.44116,
+                          "lon":-79.94375,
+                          "color": false
+  },
+  "prn-lib-hl1ref-2": {
+                          "building":"Hunt Library",
+                          "name":"Hunt 1st Floor #3",
+                          "working":false,
+                          "lat":40.44116,
+                          "lon":-79.94375,
+                          "color": false
+  },
+  "prn-lib-hl1ref-3": {
+                          "building":"Hunt Library",
+                          "name":"Hunt 1st Floor #4",
+                          "working":false,
+                          "lat":40.44116,
+                          "lon":-79.94375,
+                          "color": false
+  },
+  "prn-lib-hl2-1": {
+                          "building":"Hunt Library",
+                          "name":"Hunt 2nd Floor",
+                          "working":false,
+                          "lat":40.44116,
+                          "lon":-79.94375,
+                          "color": false
+  },
+  "prn-lib-hl3-1": {
+                          "building":"Hunt Library",
+                          "name":"Hunt 3rd Floor",
+                          "working":false,
+                          "lat":40.44116,
+                          "lon":-79.94375,
+                          "color": false
+  },
+  "prn-lib-hl4arts-1": {
+                          "building":"Hunt Library",
+                          "name":"Hunt 4th Floor #1 (Color)",
+                          "working":false,
+                          "lat":40.44116,
+                          "lon":-79.94375,
+                          "color": true
+  },
+  "prn-lib-hl4arts-2": {
+                          "building":"Hunt Library",
+                          "name":"Hunt 4th Floor #2",
+                          "working":false,
+                          "lat":40.44116,
+                          "lon":-79.94375,
+                          "color": false
+  },
+  "prn-lib-hl4music-1": {
+                          "building":"Hunt Library",
+                          "name":"Hunt 4th Floor #3",
+                          "working":false,
+                          "lat":40.44116,
+                          "lon":-79.94375,
+                          "color": false
+  },
+  "prn-lib-mi-1": {
+                          "building":"Mellon Institute",
+                          "name":"MI 4th Floor #1 (Color)",
+                          "working":false,
+                          "lat":40.44616,
+                          "lon":-79.95109,
+                          "color": true
+  },
+  "prn-lib-mi-3": {
+                          "building":"Mellon Institute",
+                          "name":"MI 4th Floor #2",
+                          "working":false,
+                          "lat":40.44616,
+                          "lon":-79.95109,
+                          "color": false
   }
 }

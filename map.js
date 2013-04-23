@@ -1,3 +1,7 @@
+$(document).ready(function(){
+  initialize();
+});
+
 /* ##########################################
  * Initialize the map and customize its style
  * ########################################## */

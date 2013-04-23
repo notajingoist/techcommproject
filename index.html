@@ -2,23 +2,26 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <!-- 	<link rel="favicon" href="images/favicon.ico" > -->
 	<link href="css/css-reset.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
+	
 	<link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<title>EasyPrint</title>
 
 </head>
 <body>
-	<div id="navigation">
-		<button id="map_button">Map</button>
-		<button id="list_button">List</button>
-	</div>
+	
 	<div id="content">
-		<h1>EasyPrint</h1> 
+		<div id="navigation">
+			<button id="map_button">Map</button>
+			<button id="list_button">List</button>
+		</div>
 		<div id="views">
 			<div id="listview">
+				<h1>EasyPrint</h1> 
 				<ul>
 					<li class="go">Doherty</li>
 					<li class="stop">Wean</li>
@@ -28,7 +31,8 @@
 				</ul>
 			</div>
 			<div id="mapview">
-				Blahhhh.
+				<div id="button-tray"></div>
+				<div id="map-canvas"></div>
 			</div>
 		</div>
 	</div>
@@ -39,6 +43,10 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/App.js"></script>
 <script type="text/javascript" src="js/parse.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbN8z9MbMCHh1642kughjk97XaWKWqW7U&sensor=true"></script>
+<script type="text/javascript" src="map.js"></script>
+
+
 </html>
 
 

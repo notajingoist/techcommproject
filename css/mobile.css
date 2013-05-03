@@ -1,0 +1,73 @@
+* {
+  /*border: 1px red dashed;*/
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#list {
+  position: absolute;
+  left: 15%;
+  top: 0;
+  height: 100%;
+  width: 85%;
+  transition: left 0.4s;
+  -webkit-transition: left 0.4s;
+}
+
+#list-content {
+  z-index: 48;
+  position: inherit;
+  left: 0;
+  top: inherit;
+  height: 100%;
+  width: 100%;
+  background-color: #f0f0f0;
+  transition: left 0.4s;
+  -webkit-transition: left 0.4s;
+}
+
+#list-overlay {
+  z-index: 56;
+  display: none;
+  position: inherit;
+  left: 0;
+  top: inherit;
+  height: 100%;
+  width: 100%;
+  transition: left 0.4s;
+  -webkit-transition: left 0.4s;
+}
+
+#map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 90%;
+}
+
+#map-canvas {
+  z-index: 16;
+  position: inherit;
+  left: inherit;
+  top: inherit;
+  height: inherit;
+  width: 100%;
+  background-color: #101010;
+}
+
+#map-overlay {
+  z-index: 24;
+  position: inherit;
+  left: inherit;
+  top: inherit;
+  height: inherit;
+  width: inherit;
+  background-color: transparent;
+  transition: left 0.4s;
+  -webkit-transition: left 0.4s;
+}

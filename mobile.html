@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="easyprint.css" type="text/css" rel="stylesheet"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,500' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="ui.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbN8z9MbMCHh1642kughjk97XaWKWqW7U&sensor=true">
+    </script>
+    <script type="text/javascript" src="easyprint_map.js"></script>
+    <title>EasyPrint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+
+  <body onload="initialize()">
+    <div id="list">
+      <div id="list-overlay" onclick="open_list()"></div>
+      <div id="list-content"></div>
+    </div>
+    <div id="map">
+      <div id="map-overlay" onclick="close_list()"></div>
+      <div id="map-canvas"/>
+    </div>
+  </body>
+</html>

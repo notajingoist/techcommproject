@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/mobile.css" type="text/css" rel="stylesheet"/>
+    <link href="mobile.css" type="text/css" rel="stylesheet"/>
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,500' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="js/mobile.js"></script>
+    <script type="text/javascript" src="mobile.js"></script>
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbN8z9MbMCHh1642kughjk97XaWKWqW7U&sensor=true">
     </script>
-    <script type="text/javascript" src="js/mobile_map.js"></script>
+    <script type="text/javascript" src="mobile_map.js"></script>
     <title>EasyPrint</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   </head>

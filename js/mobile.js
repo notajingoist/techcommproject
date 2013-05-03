@@ -15,3 +15,27 @@ function open_list() {
   list_overlay.style.display = "none";
   map_overlay.style.display = "block";
 }
+
+printers = JSON.parse(getPrintersJson());
+
+function create_list() {
+  var list = document.getElementById("list-content");
+  for (printer in printers) {
+    var label = document.createElement("p");
+    label.id = printer;
+    var label_text = document.createTextNode(printer.name);
+    label.appendChild(label_text);
+    label.onclick = makePanToCenter(printer);
+    list.appendChild(label);
+  }
+}
+
+function makePanToCenter(printerId) {
+  function panToCenter() {
+    var target = new google.maps.LatLng(printers[printerId].lat, printers[printerId].lon);
+    map.panTo(target);
+  };
+  return panToCenter;
+};
+
+create_list();

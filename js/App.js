@@ -1,14 +1,14 @@
 var App = function(){
     this.setUp();
+    // initalize();
 }    
 
 App.prototype.setUp = function(){
     this.ajaxSetUp();
     this.initPages();
+
     // this.editMode = false;
     // this.linkMode = false; 
-
-
 }
 
 App.prototype.ajaxSetUp = function() {
@@ -112,6 +112,8 @@ App.prototype.initPages = function() {
             $("#listview").css("display","block");
         }
     });
+
+    
 
     // $("#show_div1").click(function() {
     //         if($("#div1").hasClass("hidden")) {

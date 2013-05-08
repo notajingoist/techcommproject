@@ -1,6 +1,6 @@
-$(document).ready(function(){
-  initialize();
-});
+// $(document).ready(function(){
+//   initialize();
+// });
 
 /* ##########################################
  * Initialize the map and customize its style
@@ -8,6 +8,7 @@ $(document).ready(function(){
 
 /* loads the map and sets options like initial location and zoom */
 function initialize() {
+  console.log('initializing');
   var myLatlng = new google.maps.LatLng(40.44258, -79.94333);
   var mapOptions = {
     center: myLatlng,
@@ -53,11 +54,13 @@ var markers = [];
 var printers = {};
 var http_request = new XMLHttpRequest();
 http_request.open("GET", "printers.json", true);
+
 http_request.onreadystatechange = function () {
   var done = 4, ok = 200;
   if (http_request.readyState == done && http_request.status == ok) {
     printers = JSON.parse(http_request.responseText);
-
+    console.log(getPrintersJson());
+    //printers = JSON.parse(getPrintersJson());
     /* when data is received, create markers and controls using it */
     createButtons();
     drawMarkers();

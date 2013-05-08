@@ -3,9 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-<!-- 	<link rel="favicon" href="images/favicon.ico" > -->
+
+
+	<link rel="favicon" href="images/favicon.ico" >
 	<link href="css/css-reset.css" rel="stylesheet" type="text/css">
-	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+	<link href="css/style-desktop.css" rel="stylesheet" type="text/css" media="screen and (min-width:600px)">
+	<link href="css/style-mobile.css" rel="stylesheet" type="text/css" media="screen and (min-width:320px) and (max-width: 599px)">
+
+	<!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
+
 	
 	<link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -13,6 +20,12 @@
 
 </head>
 <body>
+
+	<script type="text/javascript">
+        window.onload = function(){
+            new App();
+        }
+    </script>
 	
 	<div id="content">
 		<div id="navigation">
@@ -23,7 +36,10 @@
 			<div id="listview">
 				<h1>EasyPrint</h1> 
 				<ul>
-					<li class="go">Doherty</li>
+
+
+
+				<li class="go">Doherty</li>
 					<li class="stop">Wean</li>
 					<li class="stop">Gates</li>
 					<li class="go">Hunt</li>

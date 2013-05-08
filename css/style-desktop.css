@@ -1,0 +1,158 @@
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Share Tech Mono", "PT Sans", "helvetica neue", sans-serif;
+}
+
+button {
+	box-sizing: border-box;
+	height: 100%;
+	float: right;
+	
+	text-align: center;
+	font-family: "Share Tech Mono", "PT Sans", "helvetica neue", sans-serif;
+	font-size: 20px;
+	
+	background-color: #c41230;
+	border: none;
+}
+
+#map_button {
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+#list_button {
+	padding-right: 10px;
+}
+
+#navigation {
+	box-sizing: border-box;
+	width: 100%;
+	height: 50px;
+	border-bottom: 5px solid #000;
+	box-shadow: 0px 10px 0px #d8d9da;
+	background-color: #c41230;
+	position: relative;
+	z-index: 1000;
+}
+
+h1 {
+	font-size: 44px;
+}
+
+#content {
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%;
+}
+
+/*#content {
+	clear: both;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	height: 100%;
+}
+*/
+/*#views {
+	padding: 15px;
+	min-height: 100%;
+	position: relative;
+}*/
+
+ul {
+	padding-top: 10px;
+	padding-left: 40px;
+}
+
+li {
+	line-height: 35px;
+	position: relative;
+}
+
+li.stop:before {
+	content:url("../images/red_circle.png");
+	position: absolute;
+	left: -30px;
+	top: 4px;
+}
+
+li.go:before {
+	content:url("../images/green_circle.png");
+	position: absolute;
+	left: -30px;
+	top: 4px;
+}
+
+#listview {
+	box-sizing: border-box;
+	padding: 25px;
+	padding-top: 75px;
+
+	min-width: 275px;
+	height: 100%;
+	width: 20%;
+
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+
+	background-color: #fff;
+	z-index: 900;
+}
+
+
+#mapview {
+	display: block;
+	box-sizing: border-box;
+
+	height: 100%;
+	width: 100%;
+	
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	/*background-color: #0000ff;*/
+}
+
+#mapview button {
+	display: block;
+}
+
+#map-canvas {
+  height: 100%;
+  width: 100%;
+}
+
+#button-tray {
+	display: none;
+/*  float: left;
+  width: 21%;
+  height: 96%;
+  padding: 2%;*/
+}
+
+
+
+
+
+
+

@@ -6,8 +6,12 @@
  * Initialize the map and customize its style
  * ########################################## */
 
+
 /* loads the map and sets options like initial location and zoom */
-function initialize() {
+function initialize(printersJson) {
+  var printers = {};
+  printers = JSON.parse(printersJson);
+
   console.log('initializing');
   var myLatlng = new google.maps.LatLng(40.44258, -79.94333);
   var mapOptions = {
@@ -21,6 +25,10 @@ function initialize() {
 
   /* applies the style below (no labels, desaturated colors) */
   map.setOptions({styles: styles});
+
+  createButtons(printers);
+  drawMarkers(printers);
+  setupMarkerEvents(printers);
 };
 
 var styles = [
@@ -47,43 +55,49 @@ var styles = [
 /* ##########################################
  * Create the markers and control buttons
  * ########################################## */
+
+function createMarkers() {
+
+}
+
 var map;
 var markers = [];
 
 /* get JSON file with information about the printers */
-var printers = {};
-var http_request = new XMLHttpRequest();
-http_request.open("GET", "printers.json", true);
+// var printers = {};
+// printers = printersJson;
+// var http_request = new XMLHttpRequest();
+// http_request.open("GET", "printers.json", true);
 
-http_request.onreadystatechange = function () {
-  var done = 4, ok = 200;
-  if (http_request.readyState == done && http_request.status == ok) {
-    printers = JSON.parse(http_request.responseText);
-    console.log(getPrintersJson());
-    //printers = JSON.parse(getPrintersJson());
-    /* when data is received, create markers and controls using it */
-    createButtons();
-    drawMarkers();
-    setupMarkerEvents();
-  }
-};
-http_request.send(null);
+// http_request.onreadystatechange = function () {
+//   var done = 4, ok = 200;
+//   if (http_request.readyState == done && http_request.status == ok) {
+//     printers = JSON.parse(http_request.responseText);
+    
+//     //printers = JSON.parse(getPrintersJson());
+//     /* when data is received, create markers and controls using it */
+    // createButtons();
+    // drawMarkers();
+    // setupMarkerEvents();
+//   }
+// };
+// http_request.send(null);
 
 /* creates the buttons that simulate interactions with the list view */
-function createButtons() {
+function createButtons(printers) {
   var div = document.getElementById("button-tray");
   for (printer in printers) {
     var button = document.createElement("button");
     button.style = "display:block";
     button.id = printer;
     button.innerHTML = printers[printer].name;
-    button.onclick = makePanToCenter(printer);
+    button.onclick = makePanToCenter(printers, printer);
     div.appendChild(button);
   }
 };
 
 /* creates the marker for a printer */
-function addMarker(buttonId) {
+function addMarker(printers, buttonId) {
   var working;
   if (printers[buttonId].working) {
     working = "00b303";
@@ -104,14 +118,15 @@ function addMarker(buttonId) {
       fillOpacity: 1
     },
     map: map,
-    draggable: false
+    draggable: false,
+    title: printers[buttonId].name
   }));
 };
 
 /* iterates through all printers and creates markers for them */
-function drawMarkers() {
+function drawMarkers(printers) {
   for (printer in printers) {
-    addMarker(printer);
+    addMarker(printers, printer);
   }
 };
 
@@ -120,12 +135,30 @@ function drawMarkers() {
  * ########################################## */
 
 /* attaches events to markers that center the map on them when touched */
-function setupMarkerEvents() {
+function setupMarkerEvents(printers) {
   for (i in markers) {
     var marker = markers[i];
     google.maps.event.addListener(marker, 'click', makeCenter(marker) );
   }
 };
+
+function getMarkers() {
+  return markers;
+}
+
+// var setupListMarkerEvents = function setupListMarkerEvents(name) {
+//   for (i in markers) {
+//     var marker = markers[i];
+//     if (marker.getTitle() === name) {
+//       makeCenter(marker);
+//     }
+//   }
+//   // for (var printer in printers) {
+//   //   if (printers[printer].name === name) {
+
+//   //   }
+//   // }
+// };
 
 /* helper for setupMarkerEvents */
 function makeCenter(marker) {
@@ -136,7 +169,7 @@ function makeCenter(marker) {
 }
 
 /* used by the buttons to center the map on the markers */
-function makePanToCenter(printerId) {
+function makePanToCenter(printers, printerId) {
   function panToCenter() {
     var target = new google.maps.LatLng(printers[printerId].lat,
                                         printers[printerId].lon);

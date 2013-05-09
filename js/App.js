@@ -115,6 +115,12 @@ App.prototype.initPages = function() {
 
     
 
+
+    // $.get('http://clusters.andrew.cmu.edu/printerstats/', function(res) { //get the html source of this website
+    //     console.log(res);
+    // });
+
+
     // $("#show_div1").click(function() {
     //         if($("#div1").hasClass("hidden")) {
     //             $("#div1").show();

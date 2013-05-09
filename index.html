@@ -8,8 +8,8 @@
 	<link rel="favicon" href="images/favicon.ico" >
 	<link href="css/css-reset.css" rel="stylesheet" type="text/css">
 
-	<link href="css/style-desktop.css" rel="stylesheet" type="text/css" media="screen and (min-width:600px)">
-	<link href="css/style-mobile.css" rel="stylesheet" type="text/css" media="screen and (min-width:320px) and (max-width: 599px)">
+	<link href="css/style-desktop.css" rel="stylesheet" type="text/css" media="screen and (min-width:321px)">
+	<link href="css/style-mobile.css" rel="stylesheet" type="text/css" media="screen and (min-width:0px) and (max-width: 320px)">
 
 	<!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
 
@@ -24,7 +24,7 @@
 	<script type="text/javascript">
         window.onload = function(){
             new App();
-            initialize();
+            //initialize();
         }
     </script>
 	
@@ -37,11 +37,11 @@
 			<div id="listview">
 				<h1>EasyPrint</h1> 
 				<ul>
-					<li class="go">Doherty</li>
+					<!-- <li class="go">Doherty</li>
 					<li class="stop">Wean</li>
 					<li class="stop">Gates</li>
 					<li class="go">Hunt</li>
-					<li class="stop">Etc.</li>
+					<li class="stop">Etc.</li> -->
 				</ul>
 			</div>
 			<div id="mapview">
@@ -55,9 +55,10 @@
 
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-
+<script type="text/javascript" src="js/jquery.xdomainajax.js"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbN8z9MbMCHh1642kughjk97XaWKWqW7U&sensor=true"></script>
 <script type="text/javascript" src="map.js"></script>
+<script type="text/javascript" src="js/list.js"></script>
 <script type="text/javascript" src="js/parse.js"></script>
 <script type="text/javascript" src="js/App.js"></script>
 

@@ -1,14 +1,14 @@
 var App = function(){
     this.setUp();
+    // initalize();
 }    
 
 App.prototype.setUp = function(){
     this.ajaxSetUp();
     this.initPages();
-    this.editMode = false;
-    this.linkMode = false; 
 
-
+    // this.editMode = false;
+    // this.linkMode = false; 
 }
 
 App.prototype.ajaxSetUp = function() {
@@ -95,31 +95,77 @@ App.prototype.ajaxSetUp = function() {
 }
 
 App.prototype.initPages = function() {
-    window.AbstractorApp = this;
-    var otherThis = window.AbstractorApp;
+    window.App = this;
+    var app = window.App;
 
-    this.initTrees();
-    this.initStage();
-    this.initEditMode();
-
-
-    $(".modes").hide();
-    $("#splash").show();
-    this.currentMode = "splash";
-
-    $("#edit_mode_button");
-
-    $("#edit_mode_button").click(function() {
-        $(".modes").hide();
-        $("#edit").show();
-        this.currentMode = "edit";
+    console.log("hi");
+    $("#map_button").click(function() {
+        if ($("#mapview").css("display") == "none") {
+            $("#listview").css("display","none");
+            $("#mapview").css("display","block");
+        }
     });
 
-    $("#view_mode_button").click(function() {
-        $(".modes").hide();
-        $("#view").show();
-        this.currentMode = "view";
+    $("#list_button").click(function() {
+        if ($("#listview").css("display") == "none") {
+            $("#mapview").css("display","none");
+            $("#listview").css("display","block");
+        }
     });
+
+    
+
+
+    // $.get('http://clusters.andrew.cmu.edu/printerstats/', function(res) { //get the html source of this website
+    //     console.log(res);
+    // });
+
+
+    // $("#show_div1").click(function() {
+    //         if($("#div1").hasClass("hidden")) {
+    //             $("#div1").show();
+    //             $("#div1").removeClass("hidden");
+    //         } else {
+    //             $("#div1").hide();
+    //             $("#div1").addClass("hidden");
+    //         }
+    //     });
+
+    //     $("#show_div2").click(function() {
+    //         if($("#div2").hasClass("hidden")) {
+    //             $("#div2").show();
+    //             $("#div2").removeClass("hidden");
+    //         } else {
+    //             $("#div2").hide();
+    //             $("#div2").addClass("hidden");
+    //         }
+    //     });       
+
+    // window.AbstractorApp = this;
+    // var otherThis = window.AbstractorApp;
+
+    // this.initTrees();
+    // this.initStage();
+    // this.initEditMode();
+
+
+    // $(".modes").hide();
+    // $("#splash").show();
+    // this.currentMode = "splash";
+
+    // $("#edit_mode_button");
+
+    // $("#edit_mode_button").click(function() {
+    //     $(".modes").hide();
+    //     $("#edit").show();
+    //     this.currentMode = "edit";
+    // });
+
+    // $("#view_mode_button").click(function() {
+    //     $(".modes").hide();
+    //     $("#view").show();
+    //     this.currentMode = "view";
+    // });
 
 }
 

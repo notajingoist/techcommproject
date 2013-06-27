@@ -47,14 +47,6 @@
                           "lon":-79.94432,
                           "color": false
   },
-  "prn-cl-hunt-1": {
-                          "building":"Hunt Library",
-                          "name":"Hunt Basement",
-                          "working":false,
-                          "lat":40.44116,
-                          "lon":-79.94375,
-                          "color": false
-  },
   "prn-cl-more-1": {
                           "building":"Morewood Gardens",
                           "name":"Morewood Cluster",
@@ -136,8 +128,8 @@
                           "color": false
   },
   "prn-hou-mudge-1": {
-                          "building":"Donner House",
-                          "name":"Donner",
+                          "building":"Mudge House",
+                          "name":"Mudge",
                           "working":false,
                           "lat":40.44194,
                           "lon":-79.94019,
@@ -190,6 +182,14 @@
                           "lat":40.44114,
                           "lon":-79.94375,
                           "color": true
+  },
+  "prn-cl-hunt-1": {
+                          "building":"Hunt Library",
+                          "name":"Hunt Basement",
+                          "working":false,
+                          "lat":40.44116,
+                          "lon":-79.94375,
+                          "color": false
   },
   "prn-lib-hl1color": {
                           "building":"Hunt Library",
